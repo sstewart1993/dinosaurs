@@ -13,15 +13,16 @@ Park.prototype.remove = function(velociraptor1){
     this.dinosaurs.pop(velociraptor1)
 }
 
+
 // Park.prototype.findMostAttractiveDinosaur = function(){
-//     let mostpopular;
-//   for (i=0; i<this.dinosaurs.length; i++) {
-//     if(this.dinosaurs[i].guestsAttractedPerDay < this.dinosaurs[i+1].guestsAttractedPerDay){
-//       mostpopular = this.dinosaurs[i+1]
-//     }
-//   }
-//   return mostpopular;
-// };
+//     let mostPopular
+//     for(i=0; i<this.dinosaurs.guestsAttractedPerDay; i++){
+//        if (this.dinosaurs.guestsAttractedPerDay[i]< this.dinosaurs.guestsAttractedPerDay[i++]){
+//         return mostPopular
+//        }
+// }
+// }
+
 
 Park.prototype.findBySpecies = function (species) {
     let result = this.dinosaurs.filter(dinosaur => dinosaur.species == species);
@@ -50,6 +51,4 @@ Park.prototype.calculateAverageYearlyRevenue = function(){
 
 
 
-
-
-module.exports = Park
+module.exports = Park;
