@@ -24,11 +24,6 @@ Park.prototype.remove = function(velociraptor1){
 // }
 
 
-Park.prototype.findBySpecies = function (species) {
-    let result = this.dinosaurs.filter(dinosaur => dinosaur.species == species);
-    return result;
-  };
-
 
 Park.prototype.calculateAverageVisitorsPerDay = function(){
     let totalVisitors = 0
